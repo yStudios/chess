@@ -1,0 +1,60 @@
+.square {
+            width: 70px;
+            height: 70px;
+            float: left;
+            text-align:  center;
+            line-height: 70px;
+            font-size: 18px;
+            position: relative;
+        }
+        .white {
+            background-color: #eeeed2;
+        }
+        .black {
+            background-color: #769656; /* Braune Farbe für dunklere Felder */
+        }
+        .row {
+            clear: both;
+        }
+        .piece {
+            position: absolute;
+            top: 0; /* Verschiebung nach oben entfernt */
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+				//pointer-events: none;
+        }
+        .piece img {
+            width: 100%;
+            height: 100%;
+        }
+			.closeButton{
+				position: absolute;
+            top: 0; /* Verschiebung nach oben entfernt */
+            left: 0;
+            width: 100%;
+            height: 50%;
+            z-index: 0;
+			}
+			.closeButton img {
+            width: 10px;
+            height: 10px;
+				margin-top: -20px;
+        }
+
+.marker {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+	pointer-events: none;	
+}
+
+.marker img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.3;
+}
